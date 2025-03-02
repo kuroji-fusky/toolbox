@@ -11,6 +11,9 @@
 		"lint": "prettier --check .",
 		"format": "prettier --write ."
 	},
+	"dependencies": {
+		"@fontsource/inter": "^5.0.20"
+	},
 	"devDependencies": {
 		"@iconify-json/lucide": "^1.1.208",
 		"@sveltejs/adapter-auto": "^4.0.0",
@@ -29,8 +32,5 @@
 		"unplugin-icons": "^0.19.2",
 		"vite": "^6.2.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"@fontsource/inter": "^5.0.20"
-	}
+	"type": "module"
 }
