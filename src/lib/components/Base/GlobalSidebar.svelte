@@ -10,7 +10,7 @@
 		{#each navigationItems as { heading, subitems }}
 			<div>
 				{#if heading}
-					<div class="opacity-60 my-2">{heading}</div>
+					<div class="opacity-60 my-2 cursor-default select-none">{heading}</div>
 				{/if}
 				<ul class="space-y-1.5">
 					{#each subitems as { label, path }}

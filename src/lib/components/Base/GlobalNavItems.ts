@@ -13,7 +13,7 @@ export const navigationItems = [
     subitems: [
       {
         label: "Argument Generator",
-        path: "/cli/arg-generator",
+        path: "/cli/argument-generator",
       },
       {
         label: "Shell Builder",
