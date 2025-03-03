@@ -13,7 +13,7 @@ export const navigationItems = [
     subitems: [
       {
         label: "Argument Generator",
-        path: "/cli/argument-generator",
+        path: "/argument-generator",
       },
       {
         label: "Shell Builder",
@@ -26,11 +26,11 @@ export const navigationItems = [
     subitems: [
       {
         label: "Gradients",
-        path: "/tw-gradient",
+        path: "/tailwind-gradient-generator",
       },
       {
         label: "Grid boxes",
-        path: "/tw-grids",
+        path: "/tailwind-grid-generator",
       },
     ],
   },
@@ -39,15 +39,15 @@ export const navigationItems = [
     subitems: [
       {
         label: "VS Code Themes",
-        path: "/vsc-themes",
+        path: "/vsc-theme-generator",
       },
       {
         label: "README Project Setups",
-        path: "/readme-project-setups",
+        path: "/readme-project-setup-generator",
       },
       {
         label: "Simple social links page",
-        path: "/simple-links-page",
+        path: "/simple-links-page-generator",
       },
       {
         label: "JSON",
