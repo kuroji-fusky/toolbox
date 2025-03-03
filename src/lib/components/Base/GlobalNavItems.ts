@@ -54,5 +54,5 @@ export const navigationItems = [
         path: "/json-generator",
       },
     ],
-  }
+  },
 ]

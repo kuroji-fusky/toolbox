@@ -4,9 +4,4 @@ import GlobalSidebar from "./GlobalSidebar.svelte"
 
 import Container from "./Container.svelte"
 
-export {
-  Navbar,
-  Meta,
-  GlobalSidebar,
-  Container
-}
+export { Navbar, Meta, GlobalSidebar, Container }
