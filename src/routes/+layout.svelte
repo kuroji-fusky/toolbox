@@ -1,6 +1,6 @@
 <script lang="ts">
   import "../app.css"
-  import { Navbar, GlobalSidebar } from "$lib/components/Base"
+  import { GlobalSidebar, Navbar } from "$lib/components/Base"
 </script>
 
 <Navbar />

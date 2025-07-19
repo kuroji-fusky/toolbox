@@ -6,7 +6,7 @@
     otherMeta?: Record<string, unknown>
   }
 
-  let { title, description, siteTitleTemplate, otherMeta }: Props = $props()
+  const { title, description, siteTitleTemplate, otherMeta }: Props = $props()
 </script>
 
 <svelte:head>

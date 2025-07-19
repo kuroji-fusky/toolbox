@@ -8,7 +8,7 @@
     children: Snippet
   }
 
-  let { title, description, children, class: _class }: Props = $props()
+  const { title, description, children, class: _class }: Props = $props()
 </script>
 
 <article class="my-4">

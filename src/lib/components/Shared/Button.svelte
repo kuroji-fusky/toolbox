@@ -9,7 +9,7 @@
     class: string
   }
 
-  let props: Props = $props()
+  const props: Props = $props()
 </script>
 
 <button
