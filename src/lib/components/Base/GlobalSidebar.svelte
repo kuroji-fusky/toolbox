@@ -33,7 +33,7 @@
     <div>Built by kuroji-fusky; &copy; 2025</div>
     <div>
       <a
-        href="https://github.com/kuroji-fusky/dev-generators"
+        href="https://github.com/kuroji-fusky/toolbox"
         target="_blank"
         rel="noreferrer noopener">Source code</a
       >

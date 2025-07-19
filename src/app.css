@@ -1,13 +1,11 @@
-@import "@fontsource/inter/400";
-@import "@fontsource/inter/700";
+@import "@fontsource/inter";
+@import "tailwindcss";
 
-@tailwind base;
+@custom-variant dark (&:where(html.dark *), @media (prefers-color-scheme:dark));
 
-@layer base {
-  body {
-    font-family: "Inter", theme("fontFamily.sans");
-  }
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --font-body: "Inter", var(--default-font-family);
 }
-
-@tailwind components;
-@tailwind utilities;
