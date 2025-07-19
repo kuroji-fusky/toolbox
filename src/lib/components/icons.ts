@@ -1,7 +1,9 @@
-import MenuIcon from "virtual:icons/lucide/menu"
+import PanelLeftIcon from "virtual:icons/lucide/panel-left"
+import PanelLeftClosedIcon from "virtual:icons/lucide/panel-left-dashed"
 import KuroBrandIcon from "virtual:icons/kuro/kuro-brand"
 
 export {
-  MenuIcon,
+  PanelLeftIcon,
+  PanelLeftClosedIcon,
   KuroBrandIcon
 }

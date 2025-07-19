@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { navigationItems } from "./GlobalNavItems"
+  import { navigationItems } from "./GlobalNavItems";
 </script>
 
 <aside
   id="global-sidebar"
-  class="flex-shrink-0 w-72 h-[calc(100dvh-3.25rem)] *:p-4 *:pb-0 border-r border-r-slate-300"
+  class="flex-shrink-0 w-72 *:p-3 *:pb-0 border-r border-r-neutral-300"
 >
   <div class="*:mb-4 last:*:mb-0">
-    {#each navigationItems as { heading, subitems }}
+    {#each navigationItems as { heading, subitems }, index}
       <div>
         {#if heading}
-          <div class="opacity-60 my-2 cursor-default select-none">
+          <div class={["opacity-60 my-2 cursor-default select-none px-2", index === 0 ? "mt-0" : ""]}>
             {heading}
           </div>
         {/if}
@@ -19,7 +19,7 @@
             <li>
               <a
                 href={path}
-                class="block rounded-md border transition-all hover:border-slate-400 w-full text-left py-2 px-3"
+                class="block rounded-md border border-transparent transition-all hover:border-neutral-400 w-full text-left py-1.5 px-2"
               >
                 {label}
               </a>

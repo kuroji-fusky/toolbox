@@ -1,14 +1,24 @@
 <script lang="ts">
-  import { MenuIcon, KuroBrandIcon } from "../icons";
+  import { PanelLeftIcon, PanelLeftClosedIcon, KuroBrandIcon } from "../icons";
+  import { sidebarExpandState } from "$lib/stores";
 </script>
 
-<nav class="px-6 py-4 flex justify-between *:my-auto">
-  <div>
-    <button>
-      <MenuIcon/>
+<nav class="px-3 py-2.5 flex justify-between *:my-auto bg-black">
+  <div class="flex items-center">
+    <button class="p-2.5 rounded-md cursor-pointer" onclick={() => sidebarExpandState.set(!$sidebarExpandState)}>
+      {#if $sidebarExpandState}
+        <PanelLeftIcon />
+      {:else}
+        <PanelLeftClosedIcon />
+      {/if}
     </button>
-    <KuroBrandIcon/>
-    <span></span>
+    <div class="ml-3 inline-flex items-center gap-x-3.5">
+      <a href="https://kurojifusky.com">
+        <KuroBrandIcon width="1.5em" height="1.5em" />
+      </a>
+      <div class="h-4 border-l-2 rotate-12"></div>
+      <a href="/" class="text-base px-2 py-1.5">Kuro's Dev Toolbox</a>
+    </div>
   </div>
   <div>Links/action placeholder</div>
 </nav>

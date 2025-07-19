@@ -1,14 +1,5 @@
 export const navigationItems = [
   {
-    heading: null,
-    subitems: [
-      {
-        label: "Home",
-        path: "/",
-      },
-    ],
-  },
-  {
     heading: "CLI",
     subitems: [
       {
