@@ -14,12 +14,12 @@
             {heading}
           </div>
         {/if}
-        <ul class="space-y-1.5">
+        <ul class="space-y-0.5">
           {#each subitems as { label, path }}
             <li>
               <a
                 href={path}
-                class="block rounded-md border border-transparent transition-all hover:border-neutral-400 w-full text-left py-1.5 px-2"
+                class="block rounded-md border border-transparent transition-all hover:border-neutral-400 w-full text-left py-2 px-2"
               >
                 {label}
               </a>
