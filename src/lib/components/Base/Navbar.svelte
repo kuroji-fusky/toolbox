@@ -3,22 +3,32 @@
   import { sidebarExpandState } from "$lib/stores";
 </script>
 
-<nav class="px-3 py-2.5 flex justify-between *:my-auto bg-black">
+<nav class="px-1.5 py-1 flex justify-between bg-black select-none">
   <div class="flex items-center">
-    <button class="p-2.5 rounded-md cursor-pointer" onclick={() => sidebarExpandState.set(!$sidebarExpandState)}>
+    <button
+      class="p-2.5 rounded-md cursor-pointer"
+      onclick={() => sidebarExpandState.set(!$sidebarExpandState)}
+    >
       {#if $sidebarExpandState}
         <PanelLeftIcon />
       {:else}
         <PanelLeftClosedIcon />
       {/if}
     </button>
-    <div class="ml-3 inline-flex items-center gap-x-1">
+    <div class="ml-1.5 inline-flex items-center gap-x-1">
       <a href="https://kurojifusky.com">
-        <KuroBrandIcon width="1.5em" height="1.5em" />
+        <KuroBrandIcon width="1.25em" height="1.25em" />
       </a>
-      <div class="h-4 border-l-2 rotate-12 ml-2.5 mr-0.5"></div>
-      <a href="/" class="text-base px-2 py-1.5">Kuro's Dev Toolbox</a>
+      <div class="h-3.5 opacity-50 border-l-2 rotate-[24deg] ml-2"></div>
+      <a href="/" class="px-2 py-1.5">Kuro's Dev Toolbox</a>
     </div>
   </div>
-  <div>Links/action placeholder</div>
+  <div class="my-auto mr-1 flex items-center gap-x-1.5">
+    <button class="p-1.5 cursor-pointer">
+      <PanelLeftIcon />
+    </button>
+    <button class="p-1.5 cursor-pointer">
+      <PanelLeftIcon />
+    </button>
+  </div>
 </nav>
