@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Meta } from "$lib/components/Base";
+  import { Meta } from "$lib/components/base";
 </script>
 
 <Meta title="Home :3" description="Hi" />

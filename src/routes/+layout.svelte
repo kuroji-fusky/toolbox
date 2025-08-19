@@ -1,11 +1,11 @@
 <script lang="ts">
   import "../app.css";
 
+  import type { Snippet } from "svelte";
   import interFont from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
   import interFont700 from "@fontsource/inter/files/inter-latin-700-normal.woff2?url";
 
-  import { GlobalSidebar, Navbar } from "$lib/components/Base";
-  import type { Snippet } from "svelte";
+  import { GlobalSidebar, Navbar } from "$lib/components/base";
 
   interface Props {
     children: Snippet;
