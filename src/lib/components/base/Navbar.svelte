@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { PanelLeftIcon, PanelLeftClosedIcon, KuroBrandIcon } from "../icons";
+  import { PanelLeftIcon, PanelLeftClosedIcon, KuroBrandIcon, ShareIcon } from "../icons";
   import { sidebarExpandState } from "$lib/stores";
 </script>
 
-<nav class="px-1.5 py-1 flex justify-between bg-black select-none">
+<nav class="sticky top-0 px-1.5 py-2 flex justify-between select-none bg-inher">
   <div class="flex items-center">
     <button
-      class="p-2.5 rounded-md cursor-pointer"
+      class="px-3.5 py-2 rounded-md cursor-pointer"
       onclick={() => sidebarExpandState.set(!$sidebarExpandState)}
     >
       {#if $sidebarExpandState}
@@ -24,11 +24,12 @@
     </div>
   </div>
   <div class="my-auto mr-1 flex items-center gap-x-1.5">
-    <button class="p-1.5 cursor-pointer">
+    <button class="p-1.5 cursor-pointer ">
       <PanelLeftIcon />
     </button>
-    <button class="p-1.5 cursor-pointer">
-      <PanelLeftIcon />
+    <button class="p-1.5 cursor-pointer inline-flex gap-x-2">
+      <span>Share</span>
+      <ShareIcon />
     </button>
   </div>
 </nav>
