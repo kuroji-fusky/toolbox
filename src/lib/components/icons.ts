@@ -8,10 +8,12 @@ import HeartIcon from "virtual:icons/lucide/heart"
 import CopyIcon from "virtual:icons/lucide/clipboard"
 import PinIcon from "virtual:icons/lucide/pin"
 import EllipsisIcon from "virtual:icons/lucide/ellipsis"
+import ExtLinkIcon from "virtual:icons/lucide/external-link"
 
 import KuroBrandIcon from "virtual:icons/kuro/kuro-brand"
 
 export {
+  ExtLinkIcon,
   EllipsisIcon,
   PinIcon,
   HeartIcon,
