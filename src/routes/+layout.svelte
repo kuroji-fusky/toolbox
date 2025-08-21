@@ -45,7 +45,7 @@
 </svelte:head>
 
 <Navbar />
-<div class="h-[calc(theme(height.dvh)-theme(spacing.12))]">
+<div class="h-[calc(theme(height.dvh)-theme(spacing.16))]">
   <GlobalSidebar />
   <div
     class={[
@@ -55,7 +55,7 @@
   >
     <main
       id="skip-to-content"
-      class="py-3.5 px-4 min-h-[calc(theme(height.dvh)-theme(spacing.12))] w-full"
+      class="py-3.5 px-4 min-h-[calc(theme(height.dvh)-theme(spacing.14))] w-full"
     >
       {@render children()}
     </main>
