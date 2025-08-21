@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest.json",
+  "name": "Kuro's Dev Toolbox",
+  "short_name": "Kuro's Toolbox",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "scope": "/",
+  "orientation": "portrait",
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "dir": "ltr",
+  "related_applications": [],
+  "shortcuts": [],
+  "icons": [
+    {
+      "sizes": "128x128",
+      "src": "/favicon.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "minimal-ui"
+}
